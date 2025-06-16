@@ -1,0 +1,37 @@
+@UserPermissions_Api_HostAddress = http://localhost:5023
+
+### Obtener todos los permisos
+GET {{UserPermissions_Api_HostAddress}}/api/permissions
+Accept: application/json
+
+###
+
+### Obtener permiso por ID
+GET {{UserPermissions_Api_HostAddress}}/api/permissions/1
+Accept: application/json
+
+###
+
+### Crear nuevo permiso
+POST {{UserPermissions_Api_HostAddress}}/api/permissions
+Content-Type: application/json
+
+{
+  "Name": "Juan",
+  "LastName": "Pérez",
+  "PermissionTypeId": 1,
+  "PermissionDate": "2025-06-11"
+}
+
+###
+
+### Actualizar un permiso existente
+PUT {{UserPermissions_Api_HostAddress}}/api/permissions/1
+Content-Type: application/json
+
+{
+  "Name": "Juan",
+  "LastName": "Pérez",
+  "PermissionTypeId": 1,
+  "PermissionDate": "2025-06-11"
+}
