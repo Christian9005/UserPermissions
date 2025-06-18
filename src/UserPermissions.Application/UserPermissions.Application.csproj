@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Permissions\Commands\" />
-    <Folder Include="Permissions\DTOs\" />
     <Folder Include="Permissions\Validators\" />
   </ItemGroup>
 

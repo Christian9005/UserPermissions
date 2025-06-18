@@ -16,6 +16,7 @@ public static class PersistenceServiceRegistration
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<IPermissionRepository, PermissionRepository>();
+        services.AddScoped<IPermissionTypeRepository, PermissionTypeRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
 
         return services;
