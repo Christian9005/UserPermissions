@@ -1,8 +1,9 @@
-﻿using UserPermissions.Domain.Interfaces;
+﻿using MediatR;
+using UserPermissions.Domain.Interfaces;
 
 namespace UserPermissions.Application.Permissions.Commands;
 
-public class UpdatePermissionCommandHandler
+public class UpdatePermissionCommandHandler : IRequestHandler<UpdatePermissionCommand, bool>
 {
     private readonly IUnitOfWork _unitOfWork;
 
